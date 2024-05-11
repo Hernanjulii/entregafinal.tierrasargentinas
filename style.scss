@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import "./scss/reset";
+@import "./scss/variables";
+@import "./scss/extends";
+@import "./scss/navegador";
+@import "./scss/portada";
+@import "./scss/tarjetas";
+@import "./scss/carousel";
+@import "./scss/galeria";
+@import "./scss/cuadrados";
+@import "./scss/formularios";
+@import "./scss/sucursales";
+@import "./scss/piepagina";
+
+
+
+/* Media Query */
+
+@media(max-width: 1024px){
+
+}
+
+@media(max-width: 992px){
+ .titulo{
+        font-size: 48px;
+    }
+   
+    .galeria{
+        width: 100%;
+        padding: 5px;
+    } 
+    .tarjetas{
+        margin-bottom: 20px;
+    }
+   
+}
+
+@media(max-width: 768px){
+    .titulo{
+        font-size: 32px;
+    }
+}
+
+
+@media(max-width: 556px){
+
+}
+
+

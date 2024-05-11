@@ -1,0 +1,22 @@
+/*opciones*/
+.opciones{
+    margin: 30px 0px;
+}
+.opciones-opcion{
+    background-color: $color-secundario;
+    padding: 40px;
+    color: $color-cuarto;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px;
+}
+
+.opciones-opcion-boton{
+    @extend %boton;
+    background-color: $color-terciario;
+    color: $color-cuarto;
+    &:hover{
+        background-color: $color-cuarto;
+        width: 150px;
+    }
+}

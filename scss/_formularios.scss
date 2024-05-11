@@ -1,0 +1,53 @@
+/* formularion Contactos*/
+.from-contactos{
+    background-color: $color-primario
+    width: 550px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+.from-contactos-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px 0px;
+}
+.from-contactos-grupo-mensaje{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 80px;
+    margin: 15px 0px;
+
+}
+.from-contactos-grupo-label{
+    color: $color-terciario;
+
+}
+.from-contactos-grupo-input, .from-contactos-grupo-text{
+    width: 100%;
+    background-color: transparent;
+    color: $color-secundario;
+    border: 1px solid $color-terciario;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.from-contactos-grupo-input::placeholder{
+    color: $color-secundario;
+    font-size: 20px;
+}
+.from-contactos-grupo-input:focus{
+    border: 2px solid $color-cuarto;
+    outline: none;
+}
+.from-contactos-botton{
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: 20px;
+}

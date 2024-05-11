@@ -1,0 +1,44 @@
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+
+}
+
+.tarjeta2{
+    width: 300px;
+    background-color: $color-secundario;
+    margin: 10px;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media(max-width: 992px){
+        margin-bottom: 30px;
+    }
+
+}
+
+.tarjeta2-img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.botonPrimario{
+    @extend %boton;
+    background-color: $color-terciario;
+    color: $color-secundario;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    margin-bottom: 30px;
+    &:hover{
+        background-color: $color-cuarto;
+        width: 150px;
+    }
+}
+

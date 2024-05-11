@@ -1,0 +1,17 @@
+/*Cuadros Inicio*/
+.contenedor-cuadrados{
+    background-color: $color-primario;
+    display: flex;
+    justify-content: center;
+}
+.cuadro{
+    background-color: $color-secundario;
+    width: 300px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+}
+.text-contenedor{
+    background-color: $color-terciario;
+
+}
