@@ -9,7 +9,7 @@
 .navegadorlogo {
   width: 75px;
   height: 75px;
-  position: initial;
+  object-position: start;
 }
 
 .navegador {
@@ -21,10 +21,38 @@
   justify-content: end;
   padding: 10px;
 }
-
+.icono-menu {
+  color: black;
+  font-size: 24px;
+  display: none;
+}
+.navegador .icono-menu:hover + .navegador-links {
+  right: 0;
+}
+@media (max-width: 576px) {
+  .navegador .icono-menu {
+    display: block;
+  }
+}
 .navegador-links {
-  display: flex;
   gap: 20px;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .navegador-links {
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    background-color: #fff;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 100px;
+    transition: 0.5s;
+  }
+  .navegador-links:hover {
+    right: 0px;
+  }
 }
 
 .navegador-link {
@@ -35,6 +63,11 @@
   padding: 20px 5px;
   color: black;
   text-decoration: none;
+}
+@media (max-width: 576px) {
+  .navegador-link a {
+    color: #042940;
+  }
 }
 
 .derechos-pag {
@@ -265,4 +298,3 @@
   background-color: #56B8BA;
 }/*# sourceMappingURL=style.css.map */
 
-@media

@@ -6,17 +6,19 @@
     <title>Tierras Argentinas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./galeria/logoaccesodirecto.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
     <header>
-        <nav class="navegador">
+        <nav class="navegador d-flex justify-content-end align-items-center">
             <img class="navegadorlogo" src="./galeria/logo-min.png" alt="Logo">
-            <ul class="navegador-links"> 
+            <i class="icono-menu fa-solid fa-bars"></i>  
+            <ul class="navegador-links d-flex align-items-center"> 
                 <li class="navegador-link"><a href="./index.html">inicio</a></li>
                 <li class="navegador-link"><a href="./contacto.html">contacto</a></li>
-                <li class="navegador-link"><a href="./ubicacion.html">ubicacion</a></li>
+                <li class="navegador-link"><a href="./nosotros.html">nosotros</a></li>
             </ul>
         </nav>
         <img class="portada" src="./galeria/portada.contactos.jpg" alt="">
@@ -41,7 +43,7 @@
                 <button class="opciones-opcion-boton">MAPS<i class="fa-solid fa-location-dot"></i></button>
             </div>
          </div>
-        <form method="post" name="formulario.tierrasargetinas" netlify class="from-contactos" action="">
+        <form class="from-contactos" action="">
             <div class="from-contactos-grupo">
                 <label class="from-contactos-grupo-label" for="nombre">Nombre</label>
                 <input id="nombre" class="from-contactos-grupo-input" type="text">
